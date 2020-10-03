@@ -30,6 +30,9 @@ python -m smtpd -n -c DebuggingServer localhost:1025
 
 ``` bash
 export ENV_FILE_LOCATION=./.env.test
+# まとめて
+python -m unittest --buffer
+# 単発
 python -m unittest tests/test_signup.py
 ```
 
