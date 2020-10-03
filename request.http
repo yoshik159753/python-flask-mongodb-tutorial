@@ -35,7 +35,7 @@ content-type: application/json
 Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MDE3MTU5OTYsIm5iZiI6MTYwMTcxNTk5NiwianRpIjoiOTNjMDY4ZGYtZDNiYi00MGE3LTgzMzYtY2EwZGVjYzYyNjU3IiwiZXhwIjoxNjAyMzIwNzk2LCJpZGVudGl0eSI6IjVmNzgzZTM0ZjkyYjQ2MmI2MTQyMjI4NSIsImZyZXNoIjpmYWxzZSwidHlwZSI6ImFjY2VzcyJ9.lSmg8e2pXxBJrwszTmucE4H_iV58SDgW8qqmInRhrVA
 
 {
-    "name": "The Dark Knighttt",
+    "name": "The Dark Knight4",
     "casts": ["Christian Bale", "Heath Ledger", "Aaron Eckhart", "Michael Caine"],
     "genres": ["Action", "Crime", "Drama"]
 }
@@ -54,3 +54,22 @@ content-type: application/json
 ###
 
 DELETE http://localhost:5000/api/movies/5f7818c7f1ae7349e2ff9009
+
+### パスワードリセットリクエスト
+
+POST http://localhost:5000/api/auth/forgot
+content-type: application/json
+
+{
+    "email": "user1@example.com"
+}
+
+### パスワードリセット
+
+POST http://localhost:5000/api/auth/reset
+content-type: application/json
+
+{
+    "password": "user1password",
+    "reset_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MDE3MjczOTksIm5iZiI6MTYwMTcyNzM5OSwianRpIjoiNjZhOWNlNDctY2I1ZC00ZDQ3LTlmMGQtNDYxZTZlNDRlZmRmIiwiZXhwIjoxNjAxODEzNzk5LCJpZGVudGl0eSI6IjVmNzgzZTM0ZjkyYjQ2MmI2MTQyMjI4NSIsImZyZXNoIjpmYWxzZSwidHlwZSI6ImFjY2VzcyJ9.LX27cvknp_GnI-7FXwhRmkc2ySsdFeuRoT6iu6JSCC0"
+}
