@@ -26,6 +26,13 @@ python run.py
 python -m smtpd -n -c DebuggingServer localhost:1025
 ```
 
+テストの実行。
+
+``` bash
+export ENV_FILE_LOCATION=./.env.test
+python -m unittest tests/test_signup.py
+```
+
 ## flask-restful
 
 ``` python
