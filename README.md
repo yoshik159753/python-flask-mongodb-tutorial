@@ -9,8 +9,15 @@ python-flask-mongodb の学習プロジェクト。
 ``` bash
 pipenv --python 3.8
 
-pipenv install flask flask-mongoengine flask-restful
+pipenv install flask flask-mongoengine flask-restful flask-bcrypt flask-jwt-extended
 pipenv install --dev autopep8 flake8
+```
+
+起動時。
+
+``` bash
+export ENV_FILE_LOCATION=./.env
+python app.py
 ```
 
 ## flask-restful
