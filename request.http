@@ -1,14 +1,14 @@
 ### vscode の rest-client 用リクエストファイル
 
-GET http://localhost:5000/movies
+GET http://localhost:5000/api/movies
 
 ###
 
-GET http://localhost:5000/movies/5f7818c7f1ae7349e2ff9009
+GET http://localhost:5000/api/movies/5f7818dff1ae7349e2ff900c
 
 ###
 
-POST http://localhost:5000/movies
+POST http://localhost:5000/api/movies
 content-type: application/json
 
 {
@@ -19,7 +19,7 @@ content-type: application/json
 
 ###
 
-PUT http://localhost:5000/movies/5f7818dff1ae7349e2ff900c
+PUT http://localhost:5000/api/movies/5f7818dff1ae7349e2ff900c
 content-type: application/json
 
 {
@@ -30,4 +30,4 @@ content-type: application/json
 
 ###
 
-DELETE http://localhost:5000/movies/5f7818c7f1ae7349e2ff9009
+DELETE http://localhost:5000/api/movies/5f7818c7f1ae7349e2ff9009
