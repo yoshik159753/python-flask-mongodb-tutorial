@@ -9,6 +9,6 @@ python-flask-mongodb の学習プロジェクト。
 ``` bash
 pipenv --python 3.8
 
-pipenv install flask
+pipenv install flask flask-mongoengine
 pipenv install --dev autopep8 flake8
 ```
