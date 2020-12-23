@@ -40,6 +40,3 @@ def update_movie(index):
 def delete_movie(index):
     movies.pop(index)
     return 'None', 200
-
-
-app.run()
