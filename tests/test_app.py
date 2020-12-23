@@ -31,4 +31,4 @@ def test_put(client):
 
 def test_delete(client):
     response = client.delete("movies/1")
-    assert response.status_code == 200
+    assert response.status_code != 200
